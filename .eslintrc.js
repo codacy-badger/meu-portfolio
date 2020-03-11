@@ -1,6 +1,12 @@
 module.exports = {
   'parser': '@typescript-eslint/parser',
-  'plugins': ['@typescript-eslint', 'import', 'import-helpers', 'prettier'],
+  'plugins': [
+    '@typescript-eslint',
+    'import',
+    'import-helpers',
+    'prettier',
+    'jest',
+  ],
   'extends': [
     'airbnb',
     'plugin:react/recommended',
@@ -79,7 +85,7 @@ module.exports = {
           '/^@utils/',
           '/^@assets/',
           '/^@styles/',
-          '/\.\/(?!style?)([^/]+)$/',
+          '/./(?!style?)([^/]+)$/',
           '/styles/',
           ['parent', 'sibling', 'index'],
         ],
