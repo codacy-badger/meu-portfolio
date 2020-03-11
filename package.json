@@ -61,6 +61,6 @@
     "react-is": "^16.13.0",
     "ts-jest": "^25.2.1",
     "tsconfig-paths": "^3.9.0",
-    "typescript": "~3.7.2"
+    "typescript": "~3.8.3"
   }
 }
