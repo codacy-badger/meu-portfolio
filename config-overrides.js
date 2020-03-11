@@ -10,6 +10,7 @@ module.exports = function override(config) {
     '@components': baseUrl('components'),
     '@pages': baseUrl('pages'),
     '@utils': baseUrl('utils'),
+    '@assets': baseUrl('assets'),
     '@styles': baseUrl('styles'),
   })(config);
 
