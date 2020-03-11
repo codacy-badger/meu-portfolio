@@ -1,12 +1,14 @@
 import React from 'react';
 
-import { Container, MainSection } from './styles';
+import MainSection from './sections/main';
+
+import { Container, MainContainer } from './styles';
 
 const HomePage = () => (
   <Container>
-    <MainSection>
-      <h1>Home</h1>
-    </MainSection>
+    <MainContainer>
+      <MainSection />
+    </MainContainer>
   </Container>
 );
 
