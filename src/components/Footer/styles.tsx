@@ -20,13 +20,12 @@ export const BrandsContainer = styled.div`
     i {
       margin: 0 10px;
       font-size: 30px;
-      transition: transform 300ms;
       color: #fff;
+      transition: color 300ms;
     }
 
     :hover > i {
       color: #7289da;
-      transform: scale(1.1);
     }
   }
 `;
