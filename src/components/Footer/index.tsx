@@ -3,21 +3,6 @@ import { Icon, SemanticICONS } from 'semantic-ui-react';
 
 import { Container, BrandsContainer, CreatorContainer } from './styles';
 
-interface IconNavigationProps extends HTMLAttributes<any> {
-  icon: SemanticICONS;
-  from: string;
-}
-
-const IconNavigation: FunctionComponent<IconNavigationProps> = ({
-  icon,
-  from,
-  ...rest
-}) => (
-  <a target="_blank" rel="noopener noreferrer" href={from} {...rest}>
-    <Icon name={icon} />
-  </a>
-);
-
 const FooterComponent = () => (
   <Container>
     <p>
@@ -45,6 +30,21 @@ const FooterComponent = () => (
       <p>Copyright © 2020</p>
     </CreatorContainer>
   </Container>
+);
+
+interface IconNavigationProps extends HTMLAttributes<any> {
+  icon: SemanticICONS;
+  from: string;
+}
+
+const IconNavigation: FunctionComponent<IconNavigationProps> = ({
+  icon,
+  from,
+  ...rest
+}) => (
+  <a target="_blank" rel="noopener noreferrer" href={from} {...rest}>
+    <Icon name={icon} />
+  </a>
 );
 
 export default FooterComponent;
